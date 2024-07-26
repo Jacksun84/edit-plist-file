@@ -65,6 +65,21 @@
 			<string>remote-notification</string>
 		</array>
 	</config-file>
+	<!-- iOS URL schemes (http, ftp, and so on) supported by the app -->
+	<config-file target="*-Info.plist" parent="CFBundleURLTypes">
+		<array>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLName</key>
+				<string>com.nordicplatforms.SappireCare</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>outsystems</string>
+				</array>
+			</dict>
+		</array>
+	</config-file>	    
 
     </platform>
     
